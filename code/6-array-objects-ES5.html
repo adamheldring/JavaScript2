@@ -3,7 +3,7 @@
   // structure you'd see regularly as a web developer.
   //
   // Consider the following array of product objects:
-  const products = [
+  var products = [
     { name: "Camera", brand: "Canon", model: "EOS 70D" },
     { name: "Camera", brand: "Nikon", model: "D3400" },
     { name: "Camera", brand: "GoPro", model: "Hero 4" },
@@ -14,7 +14,7 @@
   // Task 1: Write a .forEach function which iterates through the products
   // and uses console.log() to print the name and brand of each item.
 
-  products.forEach((item) => {
+  products.forEach(function (item) {
     console.log("Name: " + item.name + ", Brand:" + item.brand)
   })
 
@@ -22,7 +22,7 @@
   // each product. Assign the result to a variable called `models` and use console.log()
   // to print it.
 
-  const models = products.map((item) => {
+  var models = products.map(function (item) {
     return item.model
   })
   console.log(models)

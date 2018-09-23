@@ -6,10 +6,10 @@
   // Docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 
   // This array of dog breeds will be used for the examples below. Don't modify it here!
-  const dogs = ["Labrador", "Beagle", "Poodle", "Pug", "Chihuahua"]
+  var dogs = ["Labrador", "Beagle", "Poodle", "Pug", "Chihuahua"]
 
   // When invoked, this function will print "The {dogName} barks." You'll use this below. Don't modify it here!
-  const printDogName = (dogName) => {
+  function printDogName(dogName) {
     console.log("The " + dogName + " barks.")
   }
 
@@ -23,8 +23,8 @@
   // for how to make a string uppercase). Use .forEach to run the function for each
   // dog in the dogs array.
 
-  const printDogNameUppercase = (dogName) => {
-    console.log(`The ${dogName.toUpperCase()} barks.`)
+  function printDogNameUppercase(dogName) {
+    console.log("The " + dogName.toUpperCase() + " barks.")
   }
 
   dogs.forEach(printDogNameUppercase)
@@ -34,8 +34,9 @@
   // and uses console.log to print "The {dogName} needs to go for a walk!".
 
   console.log("ANONYMOUS FUNCTION:")
-  dogs.forEach((dogName) => {
-    console.log(`The ${dogName.toUpperCase()} needs to go for a walk.`)
+
+  dogs.forEach(function (dogName) {
+    console.log("The " +  dogName.toUpperCase() + " needs to go for a walk.")
   })
 
 

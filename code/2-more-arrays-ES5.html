@@ -1,6 +1,6 @@
 <script>
   // Here's an array which the next few tasks will build upon. Don't change it here!
-  const months = ["Jon", "Feb", "Mar", "Apr", "Jun", "May", "Jul", "Aug", "Sep", "Oct", "Nov"]
+  var months = ["Jon", "Feb", "Mar", "Apr", "Jun", "May", "Jul", "Aug", "Sep", "Oct", "Nov"]
 
   // You can modify arrays in a similar way to how you fetched a single value, and then using
   // assignment to give it a new value. For example, there's a typo in the first month of the
@@ -41,7 +41,7 @@
   // Task 6: Using splice(), you can remove items from the middle of arrays. It requires two
   // arguments; first, the index from where you'd like to start deleting, and second, the
   // number of items you'd like to delete. Use .splice() to remove "Jul" from the months array.
-  const julIndex = months.indexOf('Jul')
+  var julIndex = months.indexOf('Jul')
   months.splice(julIndex, 1)
   console.log(months)
 

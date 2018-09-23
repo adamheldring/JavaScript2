@@ -14,7 +14,7 @@
   // value. Add two more properties (keys and values) to the object; one called name which
   // should store your name as a string, and one called age which should store
   // your age as a number.
-  const person = {
+  var person = {
     studentAt: "Technigo",
     name: "Adam",
     age: 36
@@ -31,7 +31,7 @@
   // Task 3: Use the dot notation to print the name and age properties from the person
   // object using console.log.
 
-  console.log(`${person.name} is a person that is ${person.age} years old`)
+  console.log(person.name + " is a person that is " + person.age + " years old")
 
   // Task 4: You can add a property to an object using the dot notation and using assignment to
   // set a its value. Do this to add a new property to the person object with the key `eyeColor`
@@ -44,7 +44,7 @@
   // the dot notation. For example, you could select the entire `adult` object from the
   // `dog` object below using the notation `dog.labrador.adult`. Using the dog object below,
   // use console.log() to print the name of the puppy (so it should print "Buster").
-  const dogs = {
+  var dogs = {
     labrador: {
       adult: {
         name: "Marley"
